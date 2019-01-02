@@ -20,7 +20,9 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json",
+              "src/autodigi-service-worker.js"
             ],
             "styles": [
               "src/styles.css"
@@ -35,6 +37,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "ngswConfigPath": "src/ngsw-config.json",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -50,7 +53,8 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true
             }
           }
         },
@@ -84,7 +88,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },
